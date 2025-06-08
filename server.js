@@ -1,16 +1,11 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
-const path = require('path');
 require('dotenv').config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../')));
-
-
-
 
 app.post('/api/vtpass', async (req, res) => {
   const { 
@@ -43,10 +38,6 @@ app.post('/api/vtpass', async (req, res) => {
     console.error(error.response?.data || error.message);
     res.status(500).json({ error: "Transaction failed" });
   }
-});
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
