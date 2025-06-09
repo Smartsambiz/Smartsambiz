@@ -7,6 +7,27 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+app.get('/api/variations', async (req, res) => {
+  const { serviceID } = req.query;
+
+  try {
+    const response = await axios.get(`https://sandbox.vtpass.com/api/service-variations?serviceID=${serviceID}`, {
+      headers: {
+        'api-key': process.env.VTPASS_API_KEY,
+        'secret-key': process.env.VTPASS_SECRET_KEY,
+        'Content-Type': 'application/json'
+      }
+    });
+
+    res.json(response.data);
+  } catch (error) {
+    console.error("Variation fetch error:", error.response?.data || error.message);
+    res.status(500).json({ error: "Failed to fetch variations" });
+  }
+});
+
+
 app.post('/api/vtpass', async (req, res) => {
   const { 
     request_id,
@@ -40,5 +61,5 @@ app.post('/api/vtpass', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
