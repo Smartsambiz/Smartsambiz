@@ -16,6 +16,7 @@ app.get('/api/variations', async (req, res) => {
       headers: {
         'api-key': process.env.VTPASS_API_KEY,
         'secret-key': process.env.VTPASS_SECRET_KEY,
+        'public-key': PK_4757183e8bbecda1e593e4d8ef30f794542099f2b6e,
         'Content-Type': 'application/json'
       }
     });
