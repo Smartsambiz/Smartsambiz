@@ -1,10 +1,18 @@
-- 👋 Hi, I’m @Smartsambiz
-- 👀 I’m interested in coding, writing, networking
-- 🌱 Full Stack JavaScript Developer. Building with Node.js, MongoDB, and AI APIs. Currently building Chatflow — a WhatsApp automation tool for small businesses
-- 💞️ I’m looking to collaborate on web application
-- 📫 How to reach me ...
+### Hi, I'm Samuel David 👋
 
-<!---
-Smartsambiz/Smartsambiz is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Full Stack JavaScript Developer based in Lagos, Nigeria.
+
+🔨 What I build:
+- AI-powered web applications
+- Banking & fintech backend systems
+- WhatsApp automation tools for businesses
+
+🛠️ Tech Stack:
+Node.js · Express · MongoDB · JavaScript · React · REST APIs · WhatsApp Business API · AI Integrations
+
+🚀 Projects:
+- **SnapSolve AI** — AI-powered exam prep platform for Nigerian students → [Live](https://snapsolveai-xi.vercel.app)
+- **SmartPay Bank** — Full banking backend with NIBSS integration, JWT auth, interbank transfers
+- **Chatflow** — WhatsApp automation tool for small businesses (in progress)
+
+📫 Reach me: samuelmusadavid@gmail.com
