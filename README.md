@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Smartsambiz
 - 👀 I’m interested in coding, writing, networking
-- 🌱 I’m currently learning web development
+- 🌱 Full Stack JavaScript Developer. Building with Node.js, MongoDB, and AI APIs. Currently building Chatflow — a WhatsApp automation tool for small businesses
 - 💞️ I’m looking to collaborate on web application
 - 📫 How to reach me ...
 
